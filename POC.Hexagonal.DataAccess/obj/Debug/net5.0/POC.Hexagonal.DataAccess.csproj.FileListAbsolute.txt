@@ -1,0 +1,17 @@
+C:\dti\repos\POC.Hexagonal\POC.Hexagonal\POC.Hexagonal.DataAccess\bin\Debug\net5.0\POC.Hexagonal.DataAccess.deps.json
+C:\dti\repos\POC.Hexagonal\POC.Hexagonal\POC.Hexagonal.DataAccess\bin\Debug\net5.0\POC.Hexagonal.DataAccess.dll
+C:\dti\repos\POC.Hexagonal\POC.Hexagonal\POC.Hexagonal.DataAccess\bin\Debug\net5.0\ref\POC.Hexagonal.DataAccess.dll
+C:\dti\repos\POC.Hexagonal\POC.Hexagonal\POC.Hexagonal.DataAccess\bin\Debug\net5.0\POC.Hexagonal.DataAccess.pdb
+C:\dti\repos\POC.Hexagonal\POC.Hexagonal\POC.Hexagonal.DataAccess\bin\Debug\net5.0\POC.Hexagonal.Application.dll
+C:\dti\repos\POC.Hexagonal\POC.Hexagonal\POC.Hexagonal.DataAccess\bin\Debug\net5.0\POC.Hexagonal.Domain.dll
+C:\dti\repos\POC.Hexagonal\POC.Hexagonal\POC.Hexagonal.DataAccess\bin\Debug\net5.0\POC.Hexagonal.Domain.pdb
+C:\dti\repos\POC.Hexagonal\POC.Hexagonal\POC.Hexagonal.DataAccess\bin\Debug\net5.0\POC.Hexagonal.Application.pdb
+C:\dti\repos\POC.Hexagonal\POC.Hexagonal\POC.Hexagonal.DataAccess\obj\Debug\net5.0\POC.Hexagonal.DataAccess.csprojAssemblyReference.cache
+C:\dti\repos\POC.Hexagonal\POC.Hexagonal\POC.Hexagonal.DataAccess\obj\Debug\net5.0\POC.Hexagonal.DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+C:\dti\repos\POC.Hexagonal\POC.Hexagonal\POC.Hexagonal.DataAccess\obj\Debug\net5.0\POC.Hexagonal.DataAccess.AssemblyInfoInputs.cache
+C:\dti\repos\POC.Hexagonal\POC.Hexagonal\POC.Hexagonal.DataAccess\obj\Debug\net5.0\POC.Hexagonal.DataAccess.AssemblyInfo.cs
+C:\dti\repos\POC.Hexagonal\POC.Hexagonal\POC.Hexagonal.DataAccess\obj\Debug\net5.0\POC.Hexagonal.DataAccess.csproj.CoreCompileInputs.cache
+C:\dti\repos\POC.Hexagonal\POC.Hexagonal\POC.Hexagonal.DataAccess\obj\Debug\net5.0\POC.Hexagonal.DataAccess.csproj.CopyComplete
+C:\dti\repos\POC.Hexagonal\POC.Hexagonal\POC.Hexagonal.DataAccess\obj\Debug\net5.0\POC.Hexagonal.DataAccess.dll
+C:\dti\repos\POC.Hexagonal\POC.Hexagonal\POC.Hexagonal.DataAccess\obj\Debug\net5.0\ref\POC.Hexagonal.DataAccess.dll
+C:\dti\repos\POC.Hexagonal\POC.Hexagonal\POC.Hexagonal.DataAccess\obj\Debug\net5.0\POC.Hexagonal.DataAccess.pdb

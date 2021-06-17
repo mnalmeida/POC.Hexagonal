@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "BGso8wjCk+m80JAKE/6HMomDtVOrjx1/7msfH4lzHCpQykbhsHsQqwOHZ5mUQ8/dajUz54y8wHQlk0KVB63cYw==",
+  "success": true,
+  "projectFilePath": "C:\\dti\\repos\\POC.Hexagonal\\POC.Hexagonal\\POC.Hexagonal.DataAccess\\POC.Hexagonal.DataAccess.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Dell\\.nuget\\packages\\flunt\\2.0.3\\flunt.2.0.3.nupkg.sha512",
+    "C:\\Users\\Dell\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\5.0.0\\microsoft.extensions.configuration.abstractions.5.0.0.nupkg.sha512",
+    "C:\\Users\\Dell\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\5.0.0\\microsoft.extensions.dependencyinjection.abstractions.5.0.0.nupkg.sha512",
+    "C:\\Users\\Dell\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.0\\microsoft.extensions.primitives.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
