@@ -11,7 +11,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "POC.Hexagonal.Domain", "POC
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "POC.Hexagonal.Application", "POC.Hexagonal.Application\POC.Hexagonal.Application.csproj", "{2F59D8DA-B879-42EC-9974-4CD10136127E}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "POC.Hexagonal.DbAdapter", "POC.Hexagonal.DataAccess\POC.Hexagonal.DbAdapter.csproj", "{165DA473-4694-49D4-90D4-6EB591F54B95}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "POC.Hexagonal.DbAdapter", "POC.Hexagonal.DbAdapter\POC.Hexagonal.DbAdapter.csproj", "{165DA473-4694-49D4-90D4-6EB591F54B95}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{14AC215C-E002-4CE5-B423-4D29E4A2EA67}"
 EndProject
