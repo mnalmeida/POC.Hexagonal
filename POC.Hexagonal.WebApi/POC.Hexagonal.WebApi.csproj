@@ -12,6 +12,6 @@
 
 	<ItemGroup>
 		<ProjectReference Include="..\POC.Hexagonal.Application\POC.Hexagonal.Application.csproj" />
-		<ProjectReference Include="..\POC.Hexagonal.DataAccess\POC.Hexagonal.DataAccess.csproj" />
+		<ProjectReference Include="..\POC.Hexagonal.DataAccess\POC.Hexagonal.DbAdapter.csproj" />
 	</ItemGroup>
 </Project>

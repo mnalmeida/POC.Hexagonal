@@ -1,8 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using POC.Hexagonal.Application.InputPorts.Usuario;
-using POC.Hexagonal.Application.OutputPorts.Usuario;
-using POC.Hexagonal.Application.UseCases.AtualizarSenha;
-using POC.Hexagonal.Application.UseCases.ObterUsuario;
+using POC.Hexagonal.Application.Ports.Usuario;
+using POC.Hexagonal.Application.UseCases.Interfaces;
 
 namespace POC.Hexagonal.WebApi.Controllers
 {
@@ -10,13 +8,13 @@ namespace POC.Hexagonal.WebApi.Controllers
     [ApiController]
     public class UsuariosController : Controller
     {
-        private readonly IObterUsuarioUseCase _obterUsuarioUseCase;
-        private readonly IAtualizarSenhaUseCase _atualizarSenhaUseCase;
+        private readonly IObterUsuario _obterUsuario;
+        private readonly IAtualizarSenha _atualizarSenha;
 
-        public UsuariosController(IObterUsuarioUseCase obterUsuarioUseCase, IAtualizarSenhaUseCase atualizarSenhaUseCase)
+        public UsuariosController(IObterUsuario obterUsuario, IAtualizarSenha atualizarSenha)
         {
-            _obterUsuarioUseCase = obterUsuarioUseCase;
-            _atualizarSenhaUseCase = atualizarSenhaUseCase;
+            _obterUsuario = obterUsuario;
+            _atualizarSenha = atualizarSenha;
         }
 
         [HttpGet("/{cpf}")]
@@ -25,7 +23,7 @@ namespace POC.Hexagonal.WebApi.Controllers
         [ProducesResponseType(500)]
         public IActionResult ObterPorCpf([FromRoute] string cpf)
         {
-            var usuario = _obterUsuarioUseCase.Execute(cpf);
+            var usuario = _obterUsuario.Execute(cpf);
 
             if (usuario == null) return NotFound();
             return Ok(usuario);
@@ -37,11 +35,11 @@ namespace POC.Hexagonal.WebApi.Controllers
         [ProducesResponseType(500)]
         public IActionResult AtualizarSenha([FromBody]AtualizarSenhaInput novaSenha, [FromRoute] string cpf)
         {
-            var result = _atualizarSenhaUseCase.Execute(novaSenha, cpf);
+            _atualizarSenha.Execute(novaSenha, cpf);
             
-            if (result.Success) return NoContent();
+            return NoContent();
 
-            return BadRequest(result.Notifications);
+            //return BadRequest(result.Notifications);
         }
     }
 }
