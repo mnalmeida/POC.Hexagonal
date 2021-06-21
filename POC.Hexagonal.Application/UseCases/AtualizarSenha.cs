@@ -1,8 +1,8 @@
 ﻿using POC.Hexagonal.Application.Adapters;
 using POC.Hexagonal.Application.Ports.Usuario;
 using POC.Hexagonal.Application.UseCases.Interfaces;
+using POC.Hexagonal.Domain.Exceptions;
 using POC.Hexagonal.Domain.Models;
-using System;
 
 namespace POC.Hexagonal.Application.UseCases
 {
@@ -24,22 +24,18 @@ namespace POC.Hexagonal.Application.UseCases
 
             if(usuario == null)
             {
-                //exception de negocio
-                throw new Exception("");
-                //AddNotification("teste", "teste");
-                //return Result.Error(Notifications);
+                throw new DomainException("usuário não existe");
             }
 
             var novaSenha = new Senha(input.NovaSenha);
             usuario.AtualizarSenha(novaSenha);
 
-            if (usuario.IsValid)
+            if (!usuario.IsValid)
             {
-                _usuarioWriteDbAdapter.Atualizar(usuario);
+                throw new NotificationException(usuario.Notifications);
             }
 
-            //criar exceção de negocio com lista de notificacoes usuario.Notifications
-            throw new Exception("");
+            _usuarioWriteDbAdapter.Atualizar(usuario);
         }
     }
 }

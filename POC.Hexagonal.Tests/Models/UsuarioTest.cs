@@ -16,7 +16,7 @@ namespace POC.Hexagonal.Tests.Models
         [InlineData("")]
         [InlineData(" ")]
         [InlineData("teste123")]
-        public void AtualizarSenha_SenhaInvalida_Test(string novaSenha)
+        public void AtualizarSenha_SenhaInvalida(string novaSenha)
         {
             var usuario = new Usuario("89563632", "Teste", "teste@teste.com", new Senha("teste123"));
 
@@ -27,7 +27,7 @@ namespace POC.Hexagonal.Tests.Models
         }
 
         [Fact]
-        public void AtualizarSenha_SenhaValida_Test()
+        public void AtualizarSenha_SenhaValida()
         {
             var usuario = new Usuario("89563632", "Teste", "teste@teste.com", new Senha("teste123"));
 

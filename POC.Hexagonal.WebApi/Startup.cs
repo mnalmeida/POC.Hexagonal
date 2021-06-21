@@ -4,6 +4,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.OpenApi.Models;
+using POC.Hexagonal.WebApi.Filters;
 
 namespace POC.Hexagonal.WebApi
 {
@@ -50,13 +51,11 @@ namespace POC.Hexagonal.WebApi
             }
             app.UseHttpsRedirection();
             app.UseRouting();
+            app.UseExceptionHandler(erro => erro.UseMiddleware<GlobalExceptionHandler>());
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
             });
-
-          
-
         }
     }
 }
